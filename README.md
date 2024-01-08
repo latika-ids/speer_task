@@ -30,68 +30,70 @@ This project implements a RESTful API using Node.js, Express, and MongoDB. It in
    ```bash
    npm test
 
-##API Endpoints
+## API Endpoints
 
-###Authentication Endpoints
+### Authentication Endpoints
 
 **1. Create a new user account:**
+#### Endpoint:
 POST /auth/signup
 
 **2. Log in to an existing user account and receive an access token:**
+#### Endpoint:
 POST /auth/login
 
-###Note Endpoints
+### Note Endpoints
 
 **1. Create a new note for the authenticated user:**
-####Endpoint:
+#### Endpoint:
 POST /notes/create
-####Middleware:
+#### Middleware:
 Requires authentication
 
 **2. Update an existing note by ID for the authenticated user:**
-####Endpoint:
+#### Endpoint:
 PUT /notes/update/:id
-####Middleware:
+#### Middleware:
 Requires authentication
 
 **3. Delete a note by ID for the authenticated user:**
-####Endpoint:
+#### Endpoint:
 DELETE /notes/delete/:id
-####Middleware:
+#### Middleware:
 Requires authentication
 
 **4. Get a list of all notes for the authenticated user:**
-####Endpoint:
+#### Endpoint:
 GET /notes/getAll
-####Middleware:
+#### Middleware:
 Requires authentication
 
 **5. Get all notes of the user who is logged-in:**
-####Endpoint:
+#### Endpoint:
 GET /notes/getAllByUser
-####Middleware:
+#### Middleware:
 Requires authentication
 
 **6. Get a note by ID for the authenticated user:**
-####Endpoint:
+#### Endpoint:
 GET /notes/get/:id
-####Middleware:
+#### Middleware:
 Requires authentication
 
 **7. Share a note with another user for the authenticated user:**
-####Endpoint:
+#### Endpoint:
 POST /notes/share/:id
-####Middleware:
+#### Middleware:
 Requires authentication
 
 **8. Search for notes based on keywords for the authenticated user:**
-####Endpoint:
+#### Endpoint:
 GET /notes/search
-####Middleware:
+#### Middleware:
 Requires authentication
 
 **9. Search for notes based on keywords in the notes created by the logged-in user:**
-####Endpoint:
+#### Endpoint:
 GET /notes/searchByUser
-####Middleware:
+#### Middleware:
 Requires authentication
